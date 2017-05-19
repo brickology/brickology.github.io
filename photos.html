@@ -7,15 +7,20 @@
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+  <div class="w3-bar w3-white w3-card-2" id="myNavbar">
     <a href="#home" class="w3-bar-item w3-button"><b>Beth Weis</b> Edutainer</a>
-    <!-- Float links to the right. Hide them on small screens -->
+    <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="/index.html" class="w3-bar-item w3-button">Home</a>
-      <a href="/events.html" class="w3-bar-item w3-button">Book an Event</a>
-      <a href="/photos.html" class="w3-bar-item w3-button">Photos</a>
-      <a href="/about.html" class="w3-bar-item w3-button">About</a>
+      <a href="/index.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="/events.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>BOOK AN EVENT</a>
+      <a href="/photos.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i>PHOTOS</a>
+      <a href="/about.html" class="w3-bar-item w3-button"><i class="fa fa-usd"></i>ABOUT</a>
     </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      ...
+    </a>
   </div>
 </div>
 
