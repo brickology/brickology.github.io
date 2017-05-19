@@ -20,6 +20,15 @@
   </div>
 </div>
 
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">Beth Weis</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1200px; padding-top:100px" id="home">
   <img class="w3-image" src="/logo.png" alt="peace love happiness LEGO">
@@ -42,7 +51,7 @@
     </div>
     <div class="w3-third w3-margin-bottom">
       <h3>Organizations</h3>
-      <img src="/home/organizations.png" alt="Organizations" style="width:100%">
+      <img src="/home/organizations.jpg" alt="Organizations" style="width:100%">
       <p>Beth has experience working with scouts, libraries, schools, daycares, park districts, dorms, corporations, conventions, and more. Whether you want a free build, a customized LEGO tower, or themed building/learning, there’s an activity for you. These events can host up to 100 people, depending on the organization.</p>
       </div>
     <button class="w3-button w3-yellow w3-block" onclick="location.href='/events.html'" type="button">
